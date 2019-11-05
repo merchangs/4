@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Alexander Bogdanov</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+        :root{
+            --c:purple;
+            --altura: 70vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 16px;
+        }
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+         header{
+            width: 100%;
+            height: 70vh;
+            background: orange;
+            display: flex;
+        }
+        header>div{
+            position: relative;
+            width: 50%;
+            height: 70vh;
+        }
+        
+        .bloc_esq{
+          background: pink;
+            
+        }
+        .bloc_esq img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        .bloc_dre{
+            background: purple;  
+        }
+        .bloc_dre img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        h1{
+            font-family: 'Abril Fatface', cursive;
+            position: absolute;
+            text-align: center;
+            top: 30vh;
+            font-size: 80px;
+            width: 100%;
+            height: 70vw;
+            color: orange;
+        }
+        h2{
+            padding: 40px 0;
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 30px;
+            width: 100%;
+            color: orange;
+        }
+        article{
+            font-family: 'Jomohari',serif;
+            width: 33.4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            padding: 8vw 0;
+            color: orange;
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 2px solid orange;
+        }
+        article #cos>p:first-child::first-letter{
+            color: orange;
+            font-family: 'georgia', sans-serif;
+            font-size: 6em;
+            float: left;
+            margin-right: 0.01em;
+            margin-top: -0.4em;
+            margin-bottom: -0.2em;
+            padding-bottom: 0.2em;
+            padding-right: 0.2em;
+        }
+        article #cos{
+            text-align: justify;
+            hyphens: auto;
+            width: auto;
+            padding: 0 3em;
+        }
+        article #cos p {
+            padding: 0 0 1.5em  0;
+        }
+
+        .circulo, .hexagono{
+            background: orange;
+        }
+        .circulo img, .hexagono img{
+            mix-blend-mode: hard-light;
+        }
+        
+        .circulo, .circulo img{
+            border-radius: 50%;
+        }
+        .circulo{
+            max-width: 20em;
+            float: left;
+            margin-left: -10em;
+            shape-margin: 1em;
+            shape-outside: circle(50%)border-box;
+        }
+        .hexagono{
+            clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+        }
+        .hexagono{
+            max-width: 25em;
+            float: right;
+            margin-right: -14em;
+            shape-margin: 1em;
+            shape-outside: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%)border-box;
+        }
+        
+        @media (max-width: 800px){
+            h1{
+                font-size: 60px;
+                top: 45vh;
+            }
+            h2{
+                font-size: 25px;
+                top: 50vh;
+            }
+        }
+          @media (max-width: 600px){
+            body{
+                font-size: 10px;
+            }
+            h1{
+                font-size: 40px;
+                top: 55vh;
+            }
+            h2{
+                font-size: 15px;
+                top: 58vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src="img/Bogdanov.jpg">
+        </div>
+            
+        <div class="bloc_dre">
+            <img src="img/Bogdanov2.jpg">
+        </div>
+        <h1>Alexander Bogdanov </h1>
+        <h2><p>Physician (psychiatrist)</p><p>philosopher, utopian fiction writer</p></h2>
+    </header>
+    <article>
+        <p> He was a key figure in the early history of the Russian Social Democratic Labor Party (RSDLP, later the Communist Party of the Soviet Union [CPSU]), originally established 1898, and of its Bolshevik faction. Bogdanov co-founded the Bolsheviks in 1903, when they split with the Menshevik faction. He was a rival within the Bolsheviks to Vladimir Lenin (1870-1924), until being expelled in 1909. Following the Russian Revolutions of 1917, when the Bolsheviks came to power in the collapsing Russian Empire, during the first decade of the subsequent Soviet Union in the 1920s, he was an influential opponent of the Bolshevik government and Lenin from a Marxist leftist perspective. Bogdanov received training in medicine and psychiatry. His wide scientific and medical interests ranged from the universal systems theory to the possibility of human rejuvenation through blood transfusion. He invented an original philosophy called "tectology", now regarded as a forerunner of systems theory. He was also an economist, culture theorist, science fiction writer, and political activist. He was one of the Russian Machists. </p>
+    
+    <div id="cos">
+        <p>
+        Aleksandr Malinovsky was born in Sokółka, Grodno Governorate, Russian Empire (now Poland), into a rural teacher's family, the second of six children. He attended the Gymnasium at Tula, which he compared to a barracks or prison. He was awarded a gold medal when he graduated.Upon completion of the gymnasium, Bogdanov was admitted to the Natural Science Department of Moscow University. In his autobiography, Bogdanov reported that, while studying at Moscow University, he joined the Union Council of Regional Societies, and he was arrested and exiled to Tula because of it.
+        </p>
+        <div class="circulo">
+            <img src="img/Bogdanov4.jpg">
+        </div>
+        <p>
+        After 1911, he drifted from political activism to writing on philosophy, culture, and economics. Served as an Army doctor in WWI. He did not rejoin the Party, but after the October Revolution, he founded, together with Lunacharsky, the organisation Proletkult, which attracted a membership of some 400,000 during 1917-21. After 1921, he left politics and turned increasingly to scientific-medical work while remaining a widely respected figure of Old Bolshevism. He was a member of the Socialist Academy, where he gave lectures, and in 1926 he founded the first Institute of Blood Transfusion. He died in 1928 while experimenting with blood transfusions.
+        </p>
+         <p>
+        The occasion of his arrest and exile is as follows. The head of the Moscow Okhrana used an informant to acquire the names of members of the Union Council of Regional Societies, which included Bogdanov's name. on October 30, 1894, students rowdily demonstrated against a lecture by the famous history Professor Vasily Klyuchevsky who, despite being a well-known liberal, had written a favourable eulogy for the recently deceased Tsar Alexander III of Russia. Punishment of a few of the students was arbitrary and unfair that the Union Council requested a fair reexamination of the issue. That very night, the Okhrana arrested all the students on the list mentioned above - including Bogdanov - who were expelled from the university and banished to their hometowns.[3] Expelled from Moscow State University, he enrolled as an external student at the University of Kharkov from which he graduated as a physician in 1899. Bogdanov remained in Tula from 1894 to 1899, where - since his own family was living in Sokółka - he lodged with Alexander Rudnev, the father of Vladimir Bazarov, who became a close friend and collaborator in future years. </p>
+          <div class="hexagono">
+            <img src="img/Bogdanov3.jpg">
+        </div>
+        <p>Here he met and married Natalya Bogdanovna Korsak, who, as a woman, had been refused entrance to the university. She was eight years older than him[4] and worked as a nurse for Rudnev. Malinovsky adopted the nom de plume that he used when he wrote his major theoretical works and his novels from her patronym.[5] Alongside Bazarov and Ivan Skvortsov-Stepanov he became a tutor in a workers' study circle. This was organised in the Tula Armament Factory by Ivan Saveliev, whom Bogdanov credited with founding Social Democracy in Tula. During this period, he wrote his Brief course of economic science which was published – "subject to many modifications made for the benefit of the censor" – only in 1897. He later said that this experience of student-led education gave him his first lesson in proletarian culture. In autumn 1895, he resumed his medical studies at the University of Kharkiv (Ukraine) but still spent much time in Tula. He gained access to the works of Lenin in 1896, particularly the latter's critique of Peter Berngardovich Struve. In 1899, he graduated as a medical doctor and published his next work, "Basic elements of the historical perspective on nature". However, because of his political views, he was also arrested by the Tsar's police, spent six months in prison, and was exiled to Vologda.
+        </p>
+      
+         <p>
+        In 1924, Bogdanov started his blood transfusion experiments, apparently hoping to achieve eternal youth or at least partial rejuvenation. Lenin's sister Maria Ulyanova was among many who volunteered to take part in Bogdanov's experiments. After undergoing 11 blood transfusions, he remarked with satisfaction the improvement of his eyesight, suspension of balding, and other positive symptoms. His fellow revolutionary Leonid Krasin wrote to his wife that "Bogdanov seems to have become 7, no, 10 years younger after the operation". In 1925–1926, Bogdanov founded the Institute for Haemotology and Blood Transfusions, which was later named after him. But a later transfusion cost him his life, when he took the blood of a student suffering from malaria and tuberculosis (Bogdanov died, but the student injected with his blood made a complete recovery). Some scholars (e.g. Loren Graham) have speculated that his death may have been a suicide, because Bogdanov wrote a highly nervous political letter shortly beforehand. However, others attribute his death to blood type incompatibility which was poorly understood at the time.
+        </p>
+    </div>
+    </article>
+</body>
+</html>
